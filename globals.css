@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+     --primary: #E50914;
+     --primary-dark: #B20710;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     background-color: #141414;
+     color: white;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+     width: 10px;
+     height: 10px;
+}
+
+::-webkit-scrollbar-track {
+     background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+     background: #555;
+     border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+     background: #888;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+     outline: 2px solid var(--primary);
+     outline-offset: 2px;
+}
